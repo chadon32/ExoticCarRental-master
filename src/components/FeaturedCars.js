@@ -14,7 +14,7 @@ export default class FeaturedCars extends Component {
     });
     return (
       <section className="featured-cars">
-        <Title title="featured Cars For waste management/Superbowl week" />
+        <Title title="Featured Cars For waste management and Superbowl week" />
         <div className="featured-cars-center">
           {loading ? <Loading /> : cars}
         </div>
