@@ -60,8 +60,9 @@ export default class SingleCar extends Component {
           </div>
           <div className="single-car-info">
             <article className="desc">
-              <h3>details</h3>
-              <p>{description}</p>
+              <h3>Contact Information</h3>
+              
+              <h1>{description}</h1>
             </article>
             <article className="info">
               <h3>info</h3>
