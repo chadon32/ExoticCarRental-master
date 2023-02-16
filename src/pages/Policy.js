@@ -30,6 +30,8 @@ const Cars = () => (
             <br />
             Venmo/CashApp
             <br />
+            Dogecoin/Bitcoin
+            <br />
             <br />
             Please read the Renter Requirements Policy for details pertaining to deposits and general rental requirements at this location.
             <br />
@@ -56,23 +58,16 @@ const Cars = () => (
             <br />
             Licenses from outside the USA or Canada also may require an international drivers permit.
             <br />
-            International drivers permits are valid only if presented with the original local license. Individuals with learners permits, temporary or restricted licenses are not eligible to rent. This is only a summary.
-            <br />
-            For additional details, please reference the Drivers License Information Policy.
-            <br />
             <br />
             <h3>Age</h3>
 
             Renters must be age 21 or older.
             <br />
-            Non Credit Card Deposits
-            <br />
-            Debit Cards are accepted at the time of rental for certain vehicles. Contact branch for details. Debit cards may always be used at the end of a rental to pay for the final charges.
-            <br />
+         
             <br />
             <h3>Deposit Amounts</h3>
 
-            WE REQUIRE A MINIMUM OF $500 TO $3,000 USD DEPOSIT DEPENDING ON THE VEHICLE. DEPOSITS ARE FULLY REFUNDABLE ONCE THE VEHICLE IS INSPECTED UPON RETURN. DEPOSITS CAN TAKE 5-7 BUSINESS DAYS OR SOMETIMES LONGER DEPENDING ON YOUR BANKING SYSTEM.
+            WE REQUIRE A MINIMUM OF $500 TO $3,000 USD DEPOSIT DEPENDING ON RENTAL DURATION. DEPOSITS ARE FULLY REFUNDABLE ONCE THE VEHICLE IS INSPECTED UPON RETURN.
 
         </Banner>
 
