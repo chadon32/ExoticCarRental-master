@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FaAlignRight } from "react-icons/fa";
-import logo from "../images/dogecoin banner.jpg";
+import logo from "../images/dogetrust.jfif";
 export default class Navbar extends Component {
   state = {
     isOpen: false
