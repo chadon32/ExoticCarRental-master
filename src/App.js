@@ -17,7 +17,7 @@ const ZENDESK_KEY = "051e0bda-3602-4020-adc3-5bad9ae1bbcf";
 function App() {
 
   const handleLoaded = () => {
-    ZendeskAPI("messenger", "open");
+    ZendeskAPI("messenger", "closed");
   };
   return (
     <>
