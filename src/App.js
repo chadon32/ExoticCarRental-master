@@ -11,9 +11,19 @@ import Navbar from "./components/Navbar";
 
 import { Switch, Route } from "react-router-dom";
 
+import Zendesk, { ZendeskAPI } from "./ZendexConfig";
+
+const ZENDESK_KEY = "051e0bda-3602-4020-adc3-5bad9ae1bbcf";
 function App() {
+
+  const handleLoaded = () => {
+    ZendeskAPI("messenger", "open");
+  };
   return (
     <>
+    <div>
+      <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
+    </div>
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
