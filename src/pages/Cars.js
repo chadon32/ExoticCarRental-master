@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import CarsContainer from "../components/CarsContainer";
+import SocialFollow from "../components/SocialFollow";
 const Cars = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const Cars = () => {
         </Banner>
       </Hero>
       <CarsContainer />
+      <SocialFollow />
     </>
   );
 };
