@@ -4,7 +4,7 @@ import defaultBcg from "../images/exoticcar3.jpg";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { CarContext } from "../context";
-
+import SocialFollow from "../components/SocialFollow";
 import StyledHero from "../components/StyledHero";
 export default class SingleCar extends Component {
   constructor(props) {
@@ -85,7 +85,7 @@ export default class SingleCar extends Component {
             ))}
           </ul>
         </section>
-     
+        <SocialFollow />
       </>
     );
   }
