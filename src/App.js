@@ -8,7 +8,7 @@ import Error from "./pages/Error";
 import Policy from "./pages/Policy";
 import ChatWidget from "./papercups";
 import Navbar from "./components/Navbar";
-
+import Contact from "./pages/contact"
 import { Switch, Route } from "react-router-dom";
 
 
@@ -26,6 +26,7 @@ function App() {
         <Route exact path="/cars/" component={cars} />
         <Route exact path="/Policies/" component={Policy} />
         <Route exact path="/cars/:slug" component={SingleCar} />
+        <Route exact path="/contact" component={Contact} />
         <Route component={Error} />
       </Switch>
     </>
