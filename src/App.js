@@ -6,31 +6,20 @@ import cars from "./pages/Cars";
 import SingleCar from "./pages/SingleCar";
 import Error from "./pages/Error";
 import Policy from "./pages/Policy";
-
+import ChatWidget from "./papercups";
 import Navbar from "./components/Navbar";
 
 import { Switch, Route } from "react-router-dom";
 
 
 
-import Zendesk, { ZendeskAPI } from "./ZendexConfig";
-
-
-const ZENDESK_KEY = "051e0bda-3602-4020-adc3-5bad9ae1bbcf";
-
-
-
 function App() {
 
-  const handleLoaded = () => {
-    ZendeskAPI("messenger", "closed");
-  };
+ 
   return (
     <>
   
-    <div>
-      <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
-    </div>
+  < ChatWidget />
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
