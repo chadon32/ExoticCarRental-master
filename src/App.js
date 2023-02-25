@@ -6,7 +6,7 @@ import cars from "./pages/Cars";
 import SingleCar from "./pages/SingleCar";
 import Error from "./pages/Error";
 import Policy from "./pages/Policy";
-import ChatWidget from "./papercups";
+
 import Navbar from "./components/Navbar";
 import Contact from "./pages/contact"
 import { Switch, Route } from "react-router-dom";
@@ -19,7 +19,7 @@ function App() {
   return (
     <>
   
-  < ChatWidget />
+ 
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />

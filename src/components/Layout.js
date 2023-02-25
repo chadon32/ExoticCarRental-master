@@ -1,6 +1,6 @@
 import React from "react"
 import "../css/main.css"
-
+import SocialFollow from "../components/SocialFollow";
 import Sidebar from "./Sidebar"
 
 const Layout = ({ children }) => {
@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
    
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar}/>
       {children}
-
+      <SocialFollow />
     </>
   )
 }
