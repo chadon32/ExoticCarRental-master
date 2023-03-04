@@ -21,7 +21,7 @@ export default class Services extends Component {
         icon: <FaBitcoin />,
         title: "Dogecoin/Bitcoin",
         info:
-          "Were the only company that accepts Dogecoin as another payment"
+          "Were the only company that accepts Dogecoin/Bitcoin as another payment"
       }
     ]
   };
