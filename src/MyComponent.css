@@ -1,0 +1,27 @@
+.calendar-container {
+  position: relative;
+  height: 0;
+  padding-bottom: 50%; /* set the aspect ratio of the iframe */
+}
+
+.calendar-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px; /* adjust the top margin to move the iframe up */
+}
+
+@media (max-width: 767px) {
+  /* styles for screens smaller than 768px */
+  .calendar-container {
+    padding-bottom: 120%; /* increase the aspect ratio for mobile screens */
+    height: 0;
+  }
+  
+  .calendar-container iframe {
+    height: 110vw; /* adjust the height for mobile screens */
+    margin-top: 50px; /* adjust the top margin to move the iframe up */
+  }
+}

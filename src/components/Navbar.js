@@ -9,13 +9,33 @@ export default class Navbar extends Component {
   state = {
     isOpen: false
   };
+
   handleToggle = () => {
     this.setState({ isOpen: !this.state.isOpen });
   };
+
+  handleOutsideClick = (event) => {
+    const navbar = document.querySelector(".navbar");
+    const navLinks = document.querySelector(".nav-links");
+    const navBtn = document.querySelector(".nav-btn");
+
+    if (!navbar.contains(event.target)) {
+      navLinks.classList.remove("show-nav");
+      navBtn.classList.remove("open");
+      this.setState({ isOpen: false });
+    }
+  };
+
+  componentDidMount() {
+    document.addEventListener("click", this.handleOutsideClick);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("click", this.handleOutsideClick);
+  }
+
   render() {
     return (
-
-   
       <nav className="navbar">
         <div className="nav-center">
           <div className="nav-header">
@@ -30,29 +50,21 @@ export default class Navbar extends Component {
               <FaAlignRight className="nav-icon" />
             </button>
           </div>
-          <ul
-            className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
-          >
-       
-      
+          <ul className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}>
             <li>
-              
-            <Link to="/cars">Cars
-            
-            </Link>
-            
+              <Link to="/cars">Cars</Link>
             </li>
             <li>
-            <Link to="/Policies">Policies</Link>
+              <Link to="/Policies">Policies</Link>
             </li>
             <li>
-            <Link to="">Home</Link>
+              <Link to="">Home</Link>
             </li>
             <li>
-            <Link to="contact">Contact Me</Link>
+              <Link to="contact">Contact Me</Link>
             </li>
             <li>
-              
+              <Link to="Calender">Calender</Link>
             </li>
           </ul>
         </div>
@@ -60,3 +72,4 @@ export default class Navbar extends Component {
     );
   }
 }
+
