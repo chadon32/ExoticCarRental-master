@@ -163,13 +163,12 @@ h6 {
 .carsHero {
   height: calc(100vh - 66px);
   width: 100%;
-  background-image: url("./images/exoticcar3.jpg");
+  background: url("./images/exoticcar3.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   background-attachment: scroll;
 }
 
@@ -181,7 +180,6 @@ h6 {
   justify-content: center;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
@@ -190,17 +188,15 @@ h6 {
   .carsHero {
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
   }
   .carHero {
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
+    object-fit: cover; /* Add this line */
   }
 }
-
 /* End of Hero */
 /* Banner */
 .banner {
