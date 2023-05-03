@@ -186,12 +186,12 @@ h6 {
 @media (max-width: 800px){
   .defaultHero,
   .carsHero {
-    background-size: cover;
+    background-size: 100% auto;
     background-position: center;
     background-attachment: fixed;
   }
   .carHero {
-    background-size: cover;
+    background-size: 100% auto;
     background-position: center;
     background-attachment: fixed;
   }
