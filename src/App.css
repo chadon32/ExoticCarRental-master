@@ -173,7 +173,7 @@ h6 {
 }
 
 .carHero {
-  background-image: url("./images/exoticcar2.jpg") ;
+  background-image: url("./images/exoticcar2.jpg")center/cover no-repeat ;
   min-height: calc(100vh - 66px);
   display: flex;
   align-items: center;
