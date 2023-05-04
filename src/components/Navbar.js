@@ -66,6 +66,9 @@ export default class Navbar extends Component {
             <li>
               <Link to="Calender">Calender</Link>
             </li>
+            <li>
+              <Link to="Referral">Referral</Link>
+            </li>
           </ul>
         </div>
       </nav>
