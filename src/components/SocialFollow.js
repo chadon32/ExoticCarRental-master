@@ -10,7 +10,8 @@ import {
     
   } from "@fortawesome/free-brands-svg-icons";
 
-
+  import { FaEnvelope } from 'react-icons/fa';
+import  "../SocialFollow.css";
 
   const SocialFollow = () => {
     return (
@@ -36,10 +37,8 @@ import {
         className="instagram social">
         <FontAwesomeIcon icon={faTiktok} size="1" />
       </a>
-      
-            <Link to="./contact">Contact
-            </Link>
-           
+     
+            <Link to="./contact"><FaEnvelope className="icon" /></Link>
 
 
 </div>
